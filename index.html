@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="cart" style="display:none;">
+        <h3 class="your-cart">Your Cart</h3>
+        <ul class="cart-items"></ul>
+        <p class="total">Total Price:<span class="total-price">0</span>T</p>
+        <button class="checkout">Checkout</button>
+      </div>
+
+
+    <div class="body" id="burgur">
+        <div class="head"><img src="img/burgur.jpg" width="100%"></div>
+        <div class="so">
+        <input type="search" id="searchInput" placeholder="Search" oninput="searchItems('burgur')">
+        <img class="search" src="svg/search-svgrepo-com.svg" height="20px">
+        <button class="Color2">View Cart</button>
+        </div>
+        <div class="later">
+            <div class="content">
+                <a onclick="showCategory('burgur')" class="link" href="#">Burger</a>
+                <a onclick="showCategory('pizza')" class="link" href="#">Pizza</a>
+                <a onclick="showCategory('coldDrink')" class="link" href="#">Cold drink</a>
+                <a onclick="showCategory('hotDrink')" class="link" href="#">Hot drink</a>
+                <a onclick="showCategory('steak')" class="link" href="#">Steak</a>
+                <a onclick="showCategory('kabab')" class="link" href="#">Kabab</a>
+            </div>
+        </div>
+        <div class="list">
+            <h1>Burgurs</h1>
+            <div class="item">
+                <div class="photo">
+                    <img src="burgurs/8.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Cheese Burger</h3>
+                    <h4>180t</h4>
+                    <p>burger, cheese, bread, tomato, lettuce, spice</p>
+                </div>
+                <button class="add-to-cart" data-name="Cheese Burgur" data-price="180">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="burgurs/9.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Double Burger</h3>
+                    <h4>170t</h4>
+                    <p>2Xburger, cheese, bread, tomato, lettuce, spice, onion</p>
+                </div>
+                <button class="add-to-cart" data-name="Double Burger" data-price="170">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="burgurs/6.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Big MCdonald</h3>
+                    <h4>230t</h4>
+                    <p>2Xburger, baken, cheese, bread, tomato, lettuce, spice, onion</p>
+                </div>
+                <button class="add-to-cart" data-name="Big MCdonald" data-price="230">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="burgurs/7.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Chicken Burger</h3>
+                    <h4>170t</h4>
+                    <p>chicken burger, cheese, bread, tomato, lettuce, spice, onion</p>
+                </div>
+                <button class="add-to-cart" data-name="Chicken Burger" data-price="170">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="burgurs/1.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Burger</h3>
+                    <h4>140t</h4>
+                    <p>burger, bread, tomato, lettuce, spice, onion</p>
+                </div>
+                <button class="add-to-cart" data-name="Burger" data-price="140">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <!-- سایر برگرها... -->
+            
+            
+        </div>
+        
+    </div>
+
+    <div class="body" id="pizza">
+        <div class="head"><img src="img/pizza.png" width="100%"></div>
+        <div class="so">
+            <input type="search" id="searchInput2" placeholder="Search" oninput="searchItems('pizza')">
+            <img class="search" src="svg/search-svgrepo-com.svg" height="20px">
+            <button class="Color">View Cart</button>
+        </div>
+        <div class="later">
+            <div class="content">
+                <a onclick="showCategory('burgur')" class="link" href="#">Burger</a>
+                <a onclick="showCategory('pizza')" class="link" href="#">Pizza</a>
+                <a onclick="showCategory('coldDrink')" class="link" href="#">Cold drink</a>
+                <a onclick="showCategory('hotDrink')" class="link" href="#">Hot drink</a>
+                <a onclick="showCategory('steak')" class="link" href="#">Steak</a>
+                <a onclick="showCategory('kabab')" class="link" href="#">Kabab</a>
+            </div>
+        </div>
+        <div class="list">
+            <h1>Pizza</h1>
+            <div class="item">
+                <div class="photo">
+                    <img src="pizza/1.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Napeloni</h3>
+                    <h4>280t</h4>
+                    <p>meat, cheese, tomato, olive, mushroom, special souce</p>
+                </div>
+                <button class="add-to-cart" data-name="Napeloni" data-price="280">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="pizza/2.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Peperoni</h3>
+                    <h4>290t</h4>
+                    <p>Peperoni, cheese, tomato, onion, olive, mushroom, meat</p>
+                </div>
+                <button class="add-to-cart" data-name="Peperoni" data-price="290">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="pizza/3.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Vegan pizza</h3>
+                    <h4>220t</h4>
+                    <p>vagan meat, cheese, tomato, paper, olive, mushroom</p>
+                </div>
+                <button class="add-to-cart" data-name="Vegan pizza" data-price="220">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="pizza/4.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Meat pizza</h3>
+                    <h4>290t</h4>
+                    <p>meat, cheese, tomato, onion, olive, mushroom</p>
+                </div>
+                <button class="add-to-cart" data-name="Meat pizza" data-price="290">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <!-- سایر پیتزاها... -->
+        </div>
+    </div>
+    <div class="body" id="coldDrink">
+        <div class="head"><img src="img/cold2.jpg" width="100%"></div>
+        <div class="so">
+            <input type="search" id="searchInput3" placeholder="Search" oninput="searchItems('coldDrink')">
+            <img class="search" src="svg/search-svgrepo-com.svg" height="20px">
+            <button class="Color3">View Cart</button>
+            </div>
+        <div class="later">
+            <div class="content">
+                <a onclick="showCategory('burgur')" class="link" href="#">Burgur</a>
+                <a onclick="showCategory('pizza')" class="link" href="#">Pizza</a>
+                <a onclick="showCategory('coldDrink')" class="link" href="#">Cold drink</a>
+                <a onclick="showCategory('hotDrink')" class="link" href="#">Hot drink</a>
+                <a onclick="showCategory('steak')" class="link" href="#">Steak</a>
+                <a onclick="showCategory('kabab')" class="link" href="#">Kabab</a>
+            </div>
+        </div>
+        <div class="list">
+            <h1>ColdDrinks</h1>
+            <div class="item">
+                <div class="photo">
+                    <img src="coldDrinks/1.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Cherry Juice</h3>
+                    <h4>100t</h4>
+                    <p>cherry, water, ice</p>
+                </div>
+                <button class="add-to-cart" data-name="cherry Juice" data-price="100">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="coldDrinks/3.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>WaterMelon Juice</h3>
+                    <h4>120t</h4>
+                    <p>watermelon water ice</p>
+                </div>
+                <button class="add-to-cart" data-name="watermelon Juice" data-price="120">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="coldDrinks/4.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Mango Juice</h3>
+                    <h4>130t</h4>
+                    <p>Mango water ice</p>
+                </div>
+                <button class="add-to-cart" data-name="mango Juice" data-price="130">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="coldDrinks/5.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Liverpool Drink</h3>
+                    <h4>160t</h4>
+                    <p>apple, cherry, pineapple, mango, water, ice </p>
+                </div>
+                <button class="add-to-cart" data-name="Liverpool Drink" data-price="160">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="coldDrinks/6.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>PineApple Juice</h3>
+                    <h4>120t</h4>
+                    <p>pineapple, water, ice</p>
+                </div>
+                <button class="add-to-cart" data-name="pineapple Juice" data-price="120">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="coldDrinks/7.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Apple Juice</h3>
+                    <h4>90t</h4>
+                    <p>apple, water, ice</p>
+                </div>
+                <button class="add-to-cart" data-name="apple Juice" data-price="90">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <!-- سایر پیتزاها... -->
+        </div>
+    </div>
+    <div class="body" id="hotDrink">
+        <div class="head"><img src="img/hot.png" width="100%"></div>
+        <div class="so">
+            <input type="search" id="searchInput4" placeholder="Search" oninput="searchItems('hotDrink')">
+            <img class="search" src="svg/search-svgrepo-com.svg" height="20px">
+            <button class="Color4">View Cart</button>
+            </div>
+        <div class="later">
+            <div class="content">
+                <a onclick="showCategory('burgur')" class="link" href="#">Burger</a>
+                <a onclick="showCategory('pizza')" class="link" href="#">Pizza</a>
+                <a onclick="showCategory('coldDrink')" class="link" href="#">Cold drink</a>
+                <a onclick="showCategory('hotDrink')" class="link" href="#">Hot drink</a>
+                <a onclick="showCategory('steak')" class="link" href="#">Steak</a>
+                <a onclick="showCategory('kabab')" class="link" href="#">Kabab</a>
+            </div>
+        </div>
+        <div class="list">
+            <h1>HotDrink</h1>
+            <div class="item">
+                <div class="photo">
+                    <img src="hot/1.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Essperso</h3>
+                    <h4>50t</h4>
+                    <p>water, coffee</p>
+                </div>
+                <button class="add-to-cart" data-name="Essperso" data-price="50">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="hot/2.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Hot Choclate</h3>
+                    <h4>85t</h4>
+                    <p>milk, choclate</p>
+                </div>
+                <button class="add-to-cart" data-name="Hot choclate" data-price="85">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="hot/3.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Masala Tea</h3>
+                    <h4>130t</h4>
+                    <p>masala powder, milk</p>
+                </div>
+                <button class="add-to-cart" data-name="Masala Tea" data-price="130">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="hot/4.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Tea</h3>
+                    <h4>40t</h4>
+                    <p>tea powder, water</p>
+                </div>
+                <button class="add-to-cart" data-name="Tea" data-price="40">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="hot/5.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Flat White</h3>
+                    <h4>120t</h4>
+                    <p>steame milk, essperso</p>
+                </div>
+                <button class="add-to-cart" data-name="Flat Frappe" data-price="120">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="hot/6.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Ireland Coffee</h3>
+                    <h4>190t</h4>
+                    <p>irelandian Drink, suger, thickMilk, coffee</p>
+                </div>
+                <button class="add-to-cart" data-name="Ireland Coffee" data-price="190">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="hot/7.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Frappe</h3>
+                    <h4>100t</h4>
+                    <p>crushedIce, milk, coffee</p>
+                </div>
+                <button class="add-to-cart" data-name="Frappe" data-price="100">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <!-- سایر پیتزاها... -->
+        </div>
+    </div>
+    <div class="body" id="steak">
+        <div class="head"><img src="img/steak.jpg" width="100%"></div>
+        <div class="so">
+            <input type="search" id="searchInput5" placeholder="Search" oninput="searchItems('steak')">
+            <img class="search" src="svg/search-svgrepo-com.svg" height="20px">
+            <button class="Color5">View Cart</button>
+            </div>
+        <div class="later">
+            <div class="content">
+                <a onclick="showCategory('burgur')" class="link" href="#">Burger</a>
+                <a onclick="showCategory('pizza')" class="link" href="#">Pizza</a>
+                <a onclick="showCategory('coldDrink')" class="link" href="#">Cold drink</a>
+                <a onclick="showCategory('hotDrink')" class="link" href="#">Hot drink</a>
+                <a onclick="showCategory('steak')" class="link" href="#">Steak</a>
+                <a onclick="showCategory('kabab')" class="link" href="#">Kabab</a>
+            </div>
+        </div>
+        <div class="list">
+            <h1>Steak</h1>
+            <div class="item">
+                <div class="photo">
+                    <img src="steak/1.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Skirt Steak</h3>
+                    <h4>750t</h4>
+                    <p>skirt steak, french frize, onion, lemon, steak souce</p>
+                </div>
+                <button class="add-to-cart" data-name="Skirt Steak" data-price="750">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="steak/2.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Pork Steak</h3>
+                    <h4>650t</h4>
+                    <p>pork steak, lemon, french frize, onion</p>
+                </div>
+                <button class="add-to-cart" data-name="Pork Steak" data-price="650">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="steak/3.jpg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>beaf steak</h3>
+                    <h4>720t</h4>
+                    <p>beaf steak, french frize, steak souce, onion</p>
+                </div>
+                <button class="add-to-cart" data-name="Beaf Steak" data-price="720">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                <img src="steak/4.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Tom and Jerry Steak</h3>
+                    <h4>799t</h4>
+                    <p>steak, french frize, steak souce</p>
+                </div>
+                <button class="add-to-cart" data-name="Tom and Jerry Steak" data-price="799">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <!-- سایر پیتزاها... -->
+        </div>
+    </div>
+    <div class="body" id="kabab">
+        <div class="head"><img src="img/kebab.jpg" width="100%"></div>
+        <div class="so">
+            <input type="search" id="searchInput6" placeholder="Search" oninput="searchItems('kabab')">
+        <img class="search" src="svg/search-svgrepo-com.svg" height="20px">
+        <button class="Color6">View Cart</button>
+        </div>
+        <div class="later">
+            <div class="content">
+                <a onclick="showCategory('burgur')" class="link" href="#">Burger</a>
+                <a onclick="showCategory('pizza')" class="link" href="#">Pizza</a>
+                <a onclick="showCategory('coldDrink')" class="link" href="#">Cold drink</a>
+                <a onclick="showCategory('hotDrink')" class="link" href="#">Hot drink</a>
+                <a onclick="showCategory('steak')" class="link" href="#">Steak</a>
+                <a onclick="showCategory('kabab')" class="link" href="#">Kabab</a>
+            </div>
+        </div>
+        <div class="list">
+            <h1>Kabab</h1>
+            <div class="item">
+                <div class="photo">
+                    <img src="kebab/1.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Vaziri</h3>
+                    <h4>180t</h4>
+                    <p>kabab vaziri, rice, bread, onion, lemon</p>
+                </div>
+                <button class="add-to-cart" data-name="Vaziri" data-price="180">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="kebab/2.png" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Koobideh</h3>
+                    <h4>170t</h4>
+                    <p>kabab koobideh, rice, bread, onion, lemon</p>
+                </div>
+                <button class="add-to-cart" data-name="Koobideh" data-price="170">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="kebab/3.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Lamb Kebab</h3>
+                    <h4>170t</h4>
+                    <p>lamb kebab, rice, bread, onion, lemon</p>
+                </div>
+                <button class="add-to-cart" data-name="Lamb Kebab" data-price="170">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="kebab/4.png" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Beaf Kebab</h3>
+                    <h4>190t</h4>
+                    <p>beaf kebab, rice, bread, onion, lemon</p>
+                </div>
+                <button class="add-to-cart" data-name="Beaf Kebab" data-price="190">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <div class="item">
+                <div class="photo">
+                    <img src="kebab/5.jpeg" width="100%" height="100%">
+                </div>
+                <div class="info">
+                    <h3>Chicken Kebab</h3>
+                    <h4>150t</h4>
+                    <p>chicken kebab, rice, bread, onion, lemon</p>
+                </div>
+                <button class="add-to-cart" data-name="Chicken Kebab" data-price="150">
+                    <img src="svg/plus-large-svgrepo-com.svg" width="100%" class="svg1">
+                </button>
+            </div>
+            <!-- سایر برگرها... -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
